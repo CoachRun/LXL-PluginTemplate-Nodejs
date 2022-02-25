@@ -14,8 +14,8 @@
 
 ### 模板使用手册
 
-1. `npm install` 通过 [npm](https://nodejs.org/) 完成依赖
-2. 修改项目信息，在项目 `package.json` 中完成修改
+1. 在项目目录输入指令 `npm install` 或者 `yarn` 通过 [npm](https://nodejs.org/) 完成依赖安装
+2. 修改当前项目信息，在项目 `package.json` 中完成修改
 3. 在 `/src/` 文件夹里完成，awesome的代码
 4. `npm run dev` 或者 `yarn dev`，将会生成 **开发版** 插件，并存放在 `/dist/` 目录
 5. 进行插件调试

@@ -14,7 +14,7 @@ English | [简体中文](README_zh-cn.md)
 
 ### Template User Manual
 
-1. `npm install` download dependence by [npm](https://nodejs.org/)
+1. In project dirs root, Tpye `npm install` or `yarn` download dependence by [npm](https://nodejs.org/)
 2. modify project info in `package.json`
 3. write awesome code in `/src/` folder
 4. `npm run dev` or `yarn dev` build **Development** distribute in `/dist/`

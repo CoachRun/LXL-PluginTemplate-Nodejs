@@ -25,15 +25,17 @@ module.exports = (env, argv) => {
 
     // Get Git Commit Version Hash
     var gitCurrentCommitHash = null
-    {
-        var gitCurrentHead = null
-        try {
-            gitCurrentHead = fs.readFileSync(path.resolve(__dirname, '.git/HEAD'), 'utf8').trim();
-            let ref = gitCurrentHead.split(':')[1].trim()
+    try {
+        let gitCurrentHead = fs.readFileSync(path.resolve(__dirname, '.git/HEAD'), 'utf8').trim();
+        let pos = gitCurrentHead.indexOf(':')
+        if (pos !== -1) {
+            let ref = gitCurrentHead.substring(pos + 1).trim()
             gitCurrentCommitHash = fs.readFileSync(path.resolve(__dirname, '.git/' + ref), 'utf8').trim();
-        } catch (e) {
-            gitCurrentHead = null
+        } else {
+            gitCurrentCommitHash = gitCurrentHead
         }
+    } catch (e) {
+        console.warn('Git version will be empty output on the dist filename')
     }
 
     // Get Dist File Name
