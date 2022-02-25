@@ -8,7 +8,9 @@ English | [简体中文](README_zh-cn.md)
 3. Create your awesome plugin
 4. have some problem?
 
-[Report Issue](https://github.com/Coash_Run/LXL-PluginTemplate-Nodejs/issues)
+[LiteLoaderBDS Website](https://www.litebds.com/)
+[LiteLoaderBDS Repo](https://github.com/LiteLDev/LiteLoaderBDS)
+[Report Issue](https://github.com/CoachRun/LXL-PluginTemplate-Nodejs/issues)
 
 ### Template User Manual
 

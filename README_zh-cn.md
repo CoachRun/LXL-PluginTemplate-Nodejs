@@ -8,7 +8,9 @@
 3. 开始创造出awesome插件
 4. 有其他疑惑？
 
-[反馈问题](https://github.com/Coash_Run/LXL-PluginTemplate-Nodejs/issues)
+[LiteLoaderBDS 网站](https://www.litebds.com/)
+[LiteLoaderBDS 项目](https://github.com/LiteLDev/LiteLoaderBDS)
+[反馈问题](https://github.com/CoachRun/LXL-PluginTemplate-Nodejs/issues)
 
 ### 模板使用手册
 
