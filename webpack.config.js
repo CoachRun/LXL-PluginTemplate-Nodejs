@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
         let packageData = fs.readFileSync('package.json', 'utf8')
         packageConfig = JSON.parse(packageData)
     } catch (e) {
-        console.error('package.json read failed\n' + e)
+        console.error('Cannot not read the "package.json"\n' + e)
         exit(-1);
     }
     var PluginInfo = {
@@ -35,7 +35,8 @@ module.exports = (env, argv) => {
             gitCurrentCommitHash = gitCurrentHead
         }
     } catch (e) {
-        console.warn('Git version will be empty output on the dist filename')
+        console.warn('Cannot got the git version on this build')
+        console.warn('The git version will be empty output on the distributed filename')
     }
 
     // Get Dist File Name
